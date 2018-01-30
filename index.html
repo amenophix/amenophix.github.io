@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>~Amen0phix~</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="~Amen0phix~">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="~Amen0phix~">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="~Amen0phix~">
+  
+    <link rel="alternate" href="/atom.xml" title="~Amen0phix~" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">~Amen0phix~</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Systems, Network, Security</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-diy-rubber-raspberry-zero" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/01/30/diy-rubber-raspberry-zero/" class="article-date">
+  <time datetime="2018-01-30T20:11:27.530Z" itemprop="datePublished">2018-01-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/30/diy-rubber-raspberry-zero/">DIY Rubber Ducky on Raspberry Zero W &amp; more...</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome guys!<br>Today I will share with you my notes and walkthoughs on Howto make a Rubber-Ducky like with a Raspberry-Pi-Zero-W.</p>
+<h2 id="Hardware-Specifications"><a href="#Hardware-Specifications" class="headerlink" title="Hardware Specifications"></a>Hardware Specifications</h2><h4 id="Rubber-Ducky"><a href="#Rubber-Ducky" class="headerlink" title="Rubber Ducky:"></a>Rubber Ducky:</h4><pre><code>-Fast 60 MHz 32-bit Processor
+-Convenient Type A USB Connector
+-Expandable Memory via Micro SD
+-Hideable inside an in an innocuous looking case
+-Onboard Payload Replay Button
+</code></pre><p>This is a really tiny board but with an active community behind it:<br> <a href="https://github.com/hak4darren/USB-Rubber-Ducky/wiki/Payloads" target="_blank" rel="noopener">Payload Wiki</a><br> <a href="https://ducktoolkit.com/" target="_blank" rel="noopener">Duck Toolkit</a><br> <a href="https://github.com/skysploit/simple-ducky" target="_blank" rel="noopener">Simple Ducky Payload Generator</a><br> <a href="https://code.google.com/p/ducky-decode/" target="_blank" rel="noopener">Ducky Decode</a><br> <a href="https://forums.hak4.org/index.php?/forum/56-usb-rubber-ducky/" target="_blank" rel="noopener">Rubber Ducky Forum</a><br> <a href="https://hakshop.com/products/usb-rubber-ducky-deluxe" target="_blank" rel="noopener">Hack5</a> </p>
+<h4 id="Raspberry-Zero-W"><a href="#Raspberry-Zero-W" class="headerlink" title="Raspberry-Zero-W:"></a>Raspberry-Zero-W:</h4><pre><code>-802.11 b/g/n wireless LAN
+-Bluetooth 4.1
+-Bluetooth Low Energy (BLE)
+-1GHz, single-core CPU
+-512MB RAM
+-Mini HDMI and USB On-The-Go ports
+-Micro USB power
+-HAT-compatible 40-pin header
+-Composite video and reset headers
+-CSI camera connector
+</code></pre><p>This is a more powerfull board, bigger too, <a href="https://www.raspberrypi.org/products/raspberry-pi-zero-w/" target="_blank" rel="noopener">Pi-Zero-W</a></p>
+<h3 id="Pi-Zero-W-Operating-System-Installation"><a href="#Pi-Zero-W-Operating-System-Installation" class="headerlink" title="Pi-Zero-W Operating-System Installation"></a>Pi-Zero-W Operating-System Installation</h3><p>I will not write howto install Raspbian.<br>There is too much howto on Internet, just search it!!<br>By the way, official can be find <a href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md" target="_blank" rel="noopener">here</a><br>You would prefer the Raspbian Stretch Lite version.<a href="https://www.raspberrypi.org/downloads/raspbian/" target="_blank" rel="noopener">Raspbian</a><br>Don’t forget to verify signatures &amp; checksum!!</p>
+<h3 id="Pi-Zero-W-Applications-Installation"><a href="#Pi-Zero-W-Applications-Installation" class="headerlink" title="Pi-Zero-W Applications Installation"></a>Pi-Zero-W Applications Installation</h3><p>This is the moment of choice.<br>You can find many howto on Internet, just follow your mood, intention, etc…<br><a href="https://www.aidanwoods.com/blog/building-a-wifi-enabled-usb-rubber-ducky/" target="_blank" rel="noopener">https://www.aidanwoods.com/blog/building-a-wifi-enabled-usb-rubber-ducky/</a><br><a href="https://github.com/ossiozac/Raspberry-Pi-Zero-Rubber-Ducky-Duckberry-Pi" target="_blank" rel="noopener">https://github.com/ossiozac/Raspberry-Pi-Zero-Rubber-Ducky-Duckberry-Pi</a><br><a href="https://github.com/mame82/P4wnP1" target="_blank" rel="noopener">https://github.com/mame82/P4wnP1</a></p>
+<p>You can test each of them, and decide after all.</p>
+<p>My choice goes to <a href="https://github.com/mame82/P4wnP1" target="_blank" rel="noopener">P4wnP1 by mame82</a>:<br>“P4wnP1 is a highly customizable USB attack platform, based on a low cost Raspberry Pi Zero or Raspberry Pi Zero W.”</p>
+<p>You have all <a href="https://github.com/mame82/P4wnP1/blob/master/INSTALL.md" target="_blank" rel="noopener">installation methods here</a><br>You will find the <a href="https://p4wnp1.readthedocs.io/en/latest/" target="_blank" rel="noopener">Wiki</a><br>There is also some videos to show you how powerful this DYI can be! </p>
+<h3 id="Next-chapter-soon-feedback"><a href="#Next-chapter-soon-feedback" class="headerlink" title="Next chapter soon, feedback"></a>Next chapter soon, feedback</h3><p>See you soon!! Enjoy!!</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/01/30/diy-rubber-raspberry-zero/" data-id="cjd248ln20000t0s0p39hox3n" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/01/30/hello-world/" class="article-date">
+  <time datetime="2018-01-30T12:39:28.476Z" itemprop="datePublished">2018-01-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/30/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/01/30/hello-world/" data-id="cjd248ln70001t0s01x3c9mb9" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/01/30/diy-rubber-raspberry-zero/">DIY Rubber Ducky on Raspberry Zero W &amp; more...</a>
+          </li>
+        
+          <li>
+            <a href="/2018/01/30/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 Amen0phix<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
